@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Api_DB_Connect_Stylo_App", "Test_Api_DB_Connect_Stylo_App\Test_Api_DB_Connect_Stylo_App.csproj", "{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A7980E2-ED9C-4E36-A6B9-14E14E5AE820}
+	EndGlobalSection
+EndGlobal
