@@ -4429,11 +4429,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj",
+      "projectUniqueName": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj",
       "projectName": "Test_Api_DB_Connect_Stylo_App",
-      "projectPath": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj",
+      "projectPath": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj",
       "packagesPath": "C:\\Users\\phucp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\obj\\",
+      "outputPath": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phucp\\AppData\\Roaming\\NuGet\\NuGet.Config",

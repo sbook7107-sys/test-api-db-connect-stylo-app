@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NTQtq5E/034=",
+  "dgSpecHash": "s2wChHayS0o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj",
+  "projectFilePath": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phucp\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\phucp\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

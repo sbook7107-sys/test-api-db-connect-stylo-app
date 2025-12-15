@@ -1,0 +1,20 @@
+Controllers/
+ ├── AuthController.cs
+ ├── ProductController.cs
+
+Entities/
+ ├── TaiKhoan.cs
+ ├── KhachHang.cs
+ └── SanPham.cs
+
+DTOs/
+ ├── LoginDto.cs
+ ├── RegisterDto.cs
+ └── AuthResponseDto.cs
+
+Services/
+ ├── AuthService.cs
+ └── ProductService.cs
+
+Data/
+ └── FashionShopContext.cs
