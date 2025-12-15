@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Test_Api_DB_Connect_Stylo_App.Models;
+
+public partial class TaiKhoan
+{
+    public int TaiKhoanId { get; set; }
+
+    public string TenDangNhap { get; set; } = null!;
+
+    public string MatKhauHash { get; set; } = null!;
+
+    public DateTime CreatedAt { get; set; }
+
+    public DateTime UpdatedAt { get; set; }
+
+    public int? RoleId { get; set; }
+
+    public virtual ICollection<KhachHang> KhachHangs { get; set; } = new List<KhachHang>();
+
+    public virtual NhanVien? NhanVien { get; set; }
+
+    public virtual Role? Role { get; set; }
+}

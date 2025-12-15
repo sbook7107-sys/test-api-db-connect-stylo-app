@@ -1,0 +1,6 @@
+@Test_Api_DB_Connect_Stylo_App_HostAddress = http://localhost:5293
+
+GET {{Test_Api_DB_Connect_Stylo_App_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
