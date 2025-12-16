@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\dtos\\sanphambienthehomedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\dtos\\sanphambienthehomedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\entities\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\entities\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\entities\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\entities\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\dtos\\phanloaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\dtos\\phanloaidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\dtos\\homescreenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\dtos\\homescreenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\data\\fashionshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\data\\fashionshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\entities\\sanphambienthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\entities\\sanphambienthe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\test_stylo_backend_app\\test-api-db-connect-stylo-app\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\entities\\phanloai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\entities\\phanloai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +95,149 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DanhMuc.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\DanhMuc.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Entities\\DanhMuc.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\DanhMuc.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Entities\\DanhMuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T15:42:35.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SanPhamBienTheHomeDto.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\DTOs\\SanPhamBienTheHomeDto.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\DTOs\\SanPhamBienTheHomeDto.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\DTOs\\SanPhamBienTheHomeDto.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\DTOs\\SanPhamBienTheHomeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T14:08:35.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PhanLoai.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\PhanLoai.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Entities\\PhanLoai.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\PhanLoai.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Entities\\PhanLoai.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:27:45.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\SanPham.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Entities\\SanPham.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\SanPham.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Entities\\SanPham.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:26:48.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SanPhamBienThe.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\SanPhamBienThe.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Entities\\SanPhamBienThe.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Entities\\SanPhamBienThe.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Entities\\SanPhamBienThe.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:26:46.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FashionShopContext.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Data\\FashionShopContext.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Data\\FashionShopContext.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Data\\FashionShopContext.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Data\\FashionShopContext.cs",
+              "ViewState": "AgIAAPMBAAAAAAAAAAAUwAMCAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:35:06.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Program.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Program.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Program.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:33:39.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Controllers\\ProductController.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:32:52.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\Services\\ProductService.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\Services\\ProductService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAqwFoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:31:54.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeScreenResponseDto.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\DTOs\\HomeScreenResponseDto.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\DTOs\\HomeScreenResponseDto.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\DTOs\\HomeScreenResponseDto.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\DTOs\\HomeScreenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:31:22.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PhanLoaiDto.cs",
+              "DocumentMoniker": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\DTOs\\PhanLoaiDto.cs",
+              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\DTOs\\PhanLoaiDto.cs",
+              "ToolTip": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\DTOs\\PhanLoaiDto.cs",
+              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\DTOs\\PhanLoaiDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:30:29.99Z",
+              "EditorCaption": ""
             }
           ]
         },
