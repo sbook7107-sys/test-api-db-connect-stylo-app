@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|c:\\users\\phucp\\source\\repos\\test_api_db_connect_stylo_app\\test_api_db_connect_stylo_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DBD3B84F-B7E7-463F-BA84-79B1B5ED2933}|Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App.csproj|solutionrelative:test_api_db_connect_stylo_app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Test_Stylo_Backend_App\\test-api-db-connect-stylo-app\\Test_Api_DB_Connect_Stylo_App\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,19 +50,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\appsettings.json",
-              "RelativeDocumentMoniker": "Test_Api_DB_Connect_Stylo_App\\appsettings.json",
-              "ToolTip": "C:\\Users\\phucp\\source\\repos\\Test_Api_DB_Connect_Stylo_App\\Test_Api_DB_Connect_Stylo_App\\appsettings.json",
-              "RelativeToolTip": "Test_Api_DB_Connect_Stylo_App\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-15T03:18:47.435Z",
-              "EditorCaption": ""
             }
           ]
         },

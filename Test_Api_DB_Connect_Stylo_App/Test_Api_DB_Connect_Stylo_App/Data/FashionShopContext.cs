@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Test_Api_DB_Connect_Stylo_App.Entities;
+using Test_Api_DB_Connect_Stylo_App.Models;
 
-namespace Test_Api_DB_Connect_Stylo_App.Models;
+namespace Test_Api_DB_Connect_Stylo_App.Data;
 
 public partial class FashionShopContext : DbContext
 {
@@ -17,7 +19,7 @@ public partial class FashionShopContext : DbContext
 
     public virtual DbSet<AnhSanPham> AnhSanPhams { get; set; }
 
-    public virtual DbSet<DanhGium> DanhGia { get; set; }
+    public virtual DbSet<DanhGia> DanhGia { get; set; }
 
     public virtual DbSet<DanhMuc> DanhMucs { get; set; }
 
@@ -81,7 +83,7 @@ public partial class FashionShopContext : DbContext
                 .HasConstraintName("fk_img_sp");
         });
 
-        modelBuilder.Entity<DanhGium>(entity =>
+        modelBuilder.Entity<DanhGia>(entity =>
         {
             entity.HasKey(e => e.ReviewId).HasName("PK__DanhGia__74BC79AEAA9C99C6");
 

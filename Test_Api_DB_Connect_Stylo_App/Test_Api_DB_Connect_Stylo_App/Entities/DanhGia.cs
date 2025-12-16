@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using Test_Api_DB_Connect_Stylo_App.Entities;
 
 namespace Test_Api_DB_Connect_Stylo_App.Models;
 
-public partial class DanhGium
+public partial class DanhGia
 {
     public long ReviewId { get; set; }
 
