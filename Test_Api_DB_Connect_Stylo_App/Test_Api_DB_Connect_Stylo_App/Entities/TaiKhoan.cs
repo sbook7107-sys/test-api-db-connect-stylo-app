@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Test_Api_DB_Connect_Stylo_App.Models;
 
-namespace Test_Api_DB_Connect_Stylo_App.Models;
+namespace Test_Api_DB_Connect_Stylo_App.Entities;
 
 public partial class TaiKhoan
 {
@@ -16,6 +17,8 @@ public partial class TaiKhoan
     public DateTime UpdatedAt { get; set; }
 
     public int? RoleId { get; set; }
+
+    public bool EmailConfirmed { get; set; } = false;
 
     public virtual ICollection<KhachHang> KhachHangs { get; set; } = new List<KhachHang>();
 

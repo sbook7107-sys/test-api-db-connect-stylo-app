@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using Test_Api_DB_Connect_Stylo_App.Models;
 
-namespace Test_Api_DB_Connect_Stylo_App.Models;
+namespace Test_Api_DB_Connect_Stylo_App.Entities;
 
 public partial class KhachHang
 {
     public int KhachHangId { get; set; }
 
-    public string HoTen { get; set; } = null!;
+    public string? HoTen { get; set; } = null!;
 
-    public string GioiTinh { get; set; } = null!;
+    public string? GioiTinh { get; set; } = null!;
 
-    public DateOnly NgaySinh { get; set; }
+    public DateOnly? NgaySinh { get; set; }
 
     public string Email { get; set; } = null!;
 
@@ -19,13 +20,13 @@ public partial class KhachHang
 
     public int? TaiKhoanId { get; set; }
 
-    public DateTime CreatedAt { get; set; }
+    public DateTime? CreatedAt { get; set; }
 
-    public DateTime UpdatedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
 
     public DateTime? DeletedAt { get; set; }
 
-    public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
+    public virtual ICollection<DanhGia> DanhGia { get; set; } = new List<DanhGia>();
 
     public virtual ICollection<DonHang> DonHangs { get; set; } = new List<DonHang>();
 
