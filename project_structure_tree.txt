@@ -1,20 +1,30 @@
-Controllers/
- ├── AuthController.cs
- ├── ProductController.cs
-
-Entities/
- ├── TaiKhoan.cs
- ├── KhachHang.cs
- └── SanPham.cs
-
-DTOs/
- ├── LoginDto.cs
- ├── RegisterDto.cs
- └── AuthResponseDto.cs
-
-Services/
- ├── AuthService.cs
- └── ProductService.cs
-
-Data/
- └── FashionShopContext.cs
+FashionShopApp/
+├── Controllers/         # Tầng Giao diện (Presentation Layer)
+│   ├── AuthController.cs    # Xử lý các yêu cầu liên quan đến Đăng ký/Đăng nhập.
+│   └── ProductController.cs # Xử lý các yêu cầu liên quan đến Sản phẩm/Tìm kiếm.
+│
+├── Services/            # Tầng Logic Nghiệp vụ (Business/Service Layer)
+│   ├── AuthService.cs       # Chứa logic đăng ký, băm mật khẩu, tạo token, v.v.
+│   └── ProductService.cs    # Chứa logic truy vấn, xử lý, cập nhật thông tin Sản phẩm.
+│
+├── Data/                # Tầng Truy cập Dữ liệu (Data Access Layer - DAL)
+│   └── FashionShopContext.cs # Đối tượng Context của Entity Framework Core.
+│
+├── Entities/            # Tầng Mô hình Dữ liệu (Domain/Model Layer)
+│   ├── TaiKhoan.cs          # Mô hình ánh xạ đến bảng Tài Khoản.
+│   ├── KhachHang.cs         # Mô hình ánh xạ đến bảng Khách Hàng.
+│   └── SanPham.cs           # Mô hình ánh xạ đến bảng Sản Phẩm.
+│
+├── DTOs/                # Tầng Đối tượng Truyền Dữ liệu (Data Transfer Objects)
+│   ├── LoginDto.cs          # Dữ liệu nhận vào khi Đăng nhập (Email, Password).
+│   ├── RegisterDto.cs       # Dữ liệu nhận vào khi Đăng ký (FullName, Email, Password).
+│   └── AuthResponseDto.cs   # Dữ liệu trả về sau khi Đăng nhập (Token, User Info).
+│
+└── Core/                # Tầng Cốt lõi (Core/Infrastructure)
+    ├── **Exceptions/** # Các lớp Exception tùy chỉnh để chuẩn hóa lỗi.
+    │   ├── ConflictException.cs # Lỗi Dữ liệu đã tồn tại (HTTP 409).
+    │   └── NotFoundException.cs # Lỗi Không tìm thấy tài nguyên (HTTP 404).
+    │
+    └── **Middlewares/** # Các thành phần xử lý các yêu cầu HTTP trên toàn ứng dụng.
+        ├── ErrorDetails.cs      # Định nghĩa cấu trúc JSON chuẩn khi có lỗi.
+        └── ExceptionMiddleware.cs # Logic bắt và chuyển đổi Exception thành phản hồi HTTP chuẩn.
