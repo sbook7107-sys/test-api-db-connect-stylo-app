@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Test_Api_DB_Connect_Stylo_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f49ff5e4a80293a4abb6822dba8467a76698d5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be607e8944a6dfe24aae7f02a7c444eeb3cd18f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Test_Api_DB_Connect_Stylo_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Test_Api_DB_Connect_Stylo_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
