@@ -3,112 +3,20 @@ using Test_Api_DB_Connect_Stylo_App.DTOs;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.Json;
+using Test_Api_DB_Connect_Stylo_App.Models;
 
 namespace Test_Api_DB_Connect_Stylo_App.Services
 {
     public class ProductService
     {
-        //private readonly FashionShopContext _context;
-
-        //public ProductService(FashionShopContext context)
-        //{
-        //    _context = context;
-        //}
-
-        //public async Task<HomeScreenResponseDto> GetHomeScreenDataAsync()
-        //{
-        //    // Thiết lập thời gian chờ tối đa là 120 giây (2 phút) cho tất cả các lệnh SQL trong luồng này.
-        //    _context.Database.SetCommandTimeout(120);
-
-        //    // 1. Tải toàn bộ PhanLoai (Không thay đổi)
-        //    var phanLoaiDtos = await _context.PhanLoais
-        //        .AsNoTracking()
-        //        .OrderBy(pl => pl.PhanLoaiId)
-        //        .Select(pl => new PhanLoaiDto
-        //        {
-        //            Id = pl.PhanLoaiId,
-        //            Ten = pl.Ten
-        //        }).ToListAsync();
-
-        //    // Sửa từ pageSize (20) thành 100 theo yêu cầu màn hình Home
-        //    const int topCount = 50;
-
-        //    // 2. Tải 100 Biến Thể đầu tiên (Mới nhất theo ID)
-        //    var bienTheDtos = await _context.SanPhamBienThes
-        //        .AsNoTracking()
-        //        // Eager Loading SanPham cha (để lấy Tên, DanhMucId)
-        //        .Include(bt => bt.SanPham)
-
-        //        // Sắp xếp theo ID Biến Thể giảm dần (biến thể mới nhất)
-        //        .OrderByDescending(bt => bt.BienTheId)
-
-        //        .Take(topCount) // Lấy 100
-        //        .Select(bt => new SanPhamBienTheHomeDto
-        //        {
-        //            BienTheId = bt.BienTheId,
-        //            GiaBan = bt.GiaBan,
-        //            Sku = bt.Sku,
-
-        //            // Lấy thông tin từ SanPham cha
-        //            SanPhamId = bt.SanPhamId,
-        //            TenSanPham = bt.SanPham.TenSanPham,
-        //            // Giả định Navigation Property: SanPham.DanhMucId
-        //            DanhMucId = bt.SanPham.DanhMucId,
-
-        //            ImageUrl = $"images/variants/{bt.BienTheId}.jpg"
-        //        })
-        //        .ToListAsync();
-
-        //    // 3. Trả về DTO tổng hợp
-        //    return new HomeScreenResponseDto
-        //    {
-        //        PhanLoaiList = phanLoaiDtos,
-        //        InitialVariants = bienTheDtos,
-        //        TotalVariantCount = 0 // Đã bỏ CountAsync
-        //    };
-        //}
-
-        //// PHƯƠNG THỨC MỚI: Tải 20 Biến Thể theo PhanLoaiID
-        //public async Task<IEnumerable<SanPhamBienTheHomeDto>> GetTop20VariantsByPhanLoaiAsync(int phanLoaiId)
-        //{
-        //    _context.Database.SetCommandTimeout(60);
-
-        //    var bienTheDtos = await _context.SanPhamBienThes
-        //        .AsNoTracking()
-        //        // Chỉ Include SanPham, không cần ThenInclude DanhMuc/PhanLoai
-        //        .Include(bt => bt.SanPham)
-
-        //        // SỬA ĐỔI ĐIỀU KIỆN WHERE: Sử dụng Subquery để lọc
-        //        .Where(bt => bt.SanPham.DanhMucId.HasValue &&
-        //                     _context.DanhMucs
-        //                             .Where(dm => dm.PhanLoaiId == phanLoaiId)
-        //                             // Kiểm tra xem DanhMucID của Sản phẩm có nằm trong list DanhMuc thuộc PhanLoai đó không
-        //                             .Select(dm => dm.DanhMucId)
-        //                             .Contains(bt.SanPham.DanhMucId.Value)
-        //        )
-
-        //        .OrderByDescending(bt => bt.BienTheId)
-        //        .Take(20)
-        //        .Select(bt => new SanPhamBienTheHomeDto
-        //        {
-        //            // ... (Phần Select DTO không đổi)
-        //            BienTheId = bt.BienTheId,
-        //            GiaBan = bt.GiaBan,
-        //            Sku = bt.Sku,
-        //            SanPhamId = bt.SanPhamId,
-        //            TenSanPham = bt.SanPham.TenSanPham,
-        //            DanhMucId = bt.SanPham.DanhMucId,
-        //            ImageUrl = $"images/variants/{bt.BienTheId}.jpg"
-        //        })
-        //        .ToListAsync();
-
-        //    return bienTheDtos;
-        //}
         private readonly FashionShopContext _context;
+        private readonly IHttpClientFactory _httpClientFactory;
 
-        public ProductService(FashionShopContext context)
+        public ProductService(FashionShopContext context, IHttpClientFactory httpClientFactory)
         {
             _context = context;
+            _httpClientFactory = httpClientFactory;
         }
 
         public async Task<HomeScreenResponseDto> GetHomeScreenDataAsync()
@@ -307,5 +215,145 @@ namespace Test_Api_DB_Connect_Stylo_App.Services
                 })
                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<SanPhamBienTheHomeDto>> GetRecommendationsAsync(int sanPhamId)
+        {
+            var client = _httpClientFactory.CreateClient();
+
+            // 1. Gọi tới FastAPI (Thay URL bằng URL thực tế của bạn)
+            // Lưu ý: ID truyền vào FastAPI thường là chuỗi theo logic pkl của bạn
+            var fastApiUrl = $"http://127.0.0.1:8000/recommend/{sanPhamId}";
+
+            try
+            {
+                var response = await client.GetAsync(fastApiUrl);
+                if (!response.IsSuccessStatusCode) return new List<SanPhamBienTheHomeDto>();
+
+                var content = await response.Content.ReadAsStringAsync();
+
+                // Parse JSON để lấy danh sách ID
+                using var doc = JsonDocument.Parse(content);
+                var idStrings = doc.RootElement.GetProperty("recommendations")
+                                    .EnumerateArray()
+                                    .Select(x => x.GetString())
+                                    .ToList();
+
+                // Chuyển ID từ string sang int
+                var recommendedIds = idStrings.Select(id => int.Parse(id)).ToList();
+
+                // 2. Lấy thông tin sản phẩm từ database dựa trên danh sách ID này
+                // Tái sử dụng logic lấy giá Min và Ảnh từ hàm GetProductDataQuery nhưng thay đổi điều kiện lọc
+                return await GetProductInfoByIdsAsync(recommendedIds);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi gọi FastAPI: {ex.Message}");
+                return new List<SanPhamBienTheHomeDto>();
+            }
+        }
+
+        // Hàm phụ trợ để lấy data theo danh sách ID cụ thể
+        private async Task<List<SanPhamBienTheHomeDto>> GetProductInfoByIdsAsync(List<int> ids)
+        {
+            return await _context.SanPhams
+                .AsNoTracking()
+                .Where(sp => ids.Contains(sp.SanPhamId))
+                .Select(sp => new SanPhamBienTheHomeDto
+                {
+                    SanPhamId = sp.SanPhamId,
+                    TenSanPham = sp.TenSanPham,
+                    DanhMucId = sp.DanhMucId,
+                    GiaBan = sp.SanPhamBienThes.Any() ? sp.SanPhamBienThes.Min(bt => bt.GiaBan) : 0,
+                    BienTheId = sp.SanPhamBienThes.OrderBy(bt => bt.GiaBan).Select(bt => bt.BienTheId).FirstOrDefault(),
+                    Sku = sp.SanPhamBienThes.OrderBy(bt => bt.GiaBan).Select(bt => bt.Sku).FirstOrDefault(),
+                    ImageUrl = sp.AnhSanPhams
+                                .OrderByDescending(a => a.IsPrimary)
+                                .Select(a => a.Url)
+                                .FirstOrDefault() ?? "default-product.jpg"
+                })
+                .ToListAsync();
+        }
+
+        //public async Task<int> ProcessCheckoutAsync(CheckoutRequestDto request)
+        //{
+        //    // Sử dụng Transaction để đảm bảo an toàn dữ liệu
+        //    using var transaction = await _context.Database.BeginTransactionAsync();
+
+        //    try
+        //    {
+        //        // 1. Tính toán tổng tiền
+        //        decimal tongTienHang = request.Items.Sum(x => x.SoLuong * x.DonGia);
+        //        decimal tongThanhToan = tongTienHang + request.PhiVanChuyen;
+
+        //        // 2. Tạo đối tượng Đơn hàng (DonHang)
+        //        var donHang = new DonHang
+        //        {
+        //            KhachHangId = request.KhachHangId,
+        //            TrangThai = "ChoXacNhan",
+        //            KenhBan = request.KenhBan,
+        //            TongTienHang = tongTienHang,
+        //            TongGiamGia = 0,
+        //            Thue = 0,
+        //            PhiVanChuyen = request.PhiVanChuyen,
+        //            TongThanhToan = tongThanhToan,
+        //            NgayDat = DateTime.Now,
+        //            UpdatedAt = DateTime.Now
+        //        };
+
+        //        _context.DonHangs.Add(donHang);
+        //        await _context.SaveChangesAsync(); // Lưu để lấy DonHangID
+
+        //        // 3. Duyệt qua từng sản phẩm để lưu chi tiết và trừ kho
+        //        foreach (var item in request.Items)
+        //        {
+        //            // 3a. Thêm vào bảng Chi tiết đơn hàng
+        //            var chiTiet = new DonHangChiTiet
+        //            {
+        //                DonHangId = donHang.DonHangId,
+        //                BienTheId = item.BienTheId,
+        //                SoLuong = item.SoLuong,
+        //                DonGia = item.DonGia,
+        //                GiamGia = 0,
+        //                Thue = 0
+        //            };
+        //            _context.DonHangChiTiets.Add(chiTiet);
+
+        //            // 3b. TRỪ TỒN KHO (Quan trọng nhất)
+        //            var tonKho = await _context.TonKhos
+        //                .FirstOrDefaultAsync(tk => tk.BienTheId == item.BienTheId);
+
+        //            if (tonKho == null || (tonKho.OnHand - tonKho.Reserved) < item.SoLuong)
+        //            {
+        //                throw new Exception($"Sản phẩm ID {item.BienTheId} không đủ tồn kho.");
+        //            }
+
+        //            // Trừ số lượng thực tế trong kho
+        //            tonKho.OnHand -= item.SoLuong;
+        //            tonKho.UpdatedAt = DateTime.Now;
+        //        }
+
+        //        // 4. Tự động tạo một Vận đơn (VanDon) ở trạng thái chờ
+        //        var vanDon = new VanDon
+        //        {
+        //            DonHangId = donHang.DonHangId,
+        //            TrangThaiGiao = "ChuaGiao",
+        //            PhiVanChuyen = request.PhiVanChuyen
+        //        };
+        //        _context.VanDons.Add(vanDon);
+
+        //        await _context.SaveChangesAsync();
+
+        //        // Hoàn tất giao dịch
+        //        await transaction.CommitAsync();
+
+        //        return donHang.DonHangId;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        // Nếu có bất kỳ lỗi nào, hủy bỏ toàn bộ thay đổi trong DB
+        //        await transaction.RollbackAsync();
+        //        throw;
+        //    }
+        //}
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Test_Api_DB_Connect_Stylo_App.DTOs;
 using Test_Api_DB_Connect_Stylo_App.Services;
 
 namespace Test_Api_DB_Connect_Stylo_App.Controllers
@@ -70,5 +71,19 @@ namespace Test_Api_DB_Connect_Stylo_App.Controllers
         [HttpGet("danh-muc/{id}/san-pham")]
         public async Task<IActionResult> GetProductsByDanhMuc(int id)
             => Ok(await _productService.GetProductsByDanhMucAsync(id));
+
+        // API: Lấy danh sách gợi ý liên quan cho một sản phẩm
+        [HttpGet("{id}/recommendations")]
+        public async Task<IActionResult> GetRelatedRecommendations(int id)
+        {
+            if (id <= 0) return BadRequest("ID sản phẩm không hợp lệ.");
+
+            var recommendations = await _productService.GetRecommendationsAsync(id);
+
+            if (recommendations == null || !recommendations.Any())
+                return Ok(new List<SanPhamBienTheHomeDto>()); // Trả về mảng rỗng nếu không có gợi ý
+
+            return Ok(recommendations);
+        }
     }
 }
