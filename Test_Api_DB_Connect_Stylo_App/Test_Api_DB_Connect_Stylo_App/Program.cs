@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Test_Api_DB_Connect_Stylo_App.Services;
 using Test_Api_DB_Connect_Stylo_App.Data;
+using Test_Api_DB_Connect_Stylo_App.Core.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<EmailService>();
+builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 
@@ -25,6 +27,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseMiddleware<ExceptionMiddleware>();
+} 
+    
 
 app.UseHttpsRedirection();
 

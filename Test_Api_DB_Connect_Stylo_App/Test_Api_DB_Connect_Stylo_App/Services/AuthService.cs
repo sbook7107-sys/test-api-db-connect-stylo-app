@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FashionShopApp.Core.Exceptions;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Test_Api_DB_Connect_Stylo_App.Data;
@@ -27,7 +28,7 @@ namespace Test_Api_DB_Connect_Stylo_App.Services
         public async Task RegisterAsync(RegisterDto dto)
         {
             if (await _context.TaiKhoans.AnyAsync(x => x.TenDangNhap == dto.Email))
-                throw new Exception("Email already exists");
+                throw new ConflictException("Email already exists");
 
             // 1. Tạo tài khoản
             var taiKhoan = new TaiKhoan
