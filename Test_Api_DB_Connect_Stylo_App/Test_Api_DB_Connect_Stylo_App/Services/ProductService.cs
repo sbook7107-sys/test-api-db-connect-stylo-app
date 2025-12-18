@@ -31,7 +31,7 @@ namespace Test_Api_DB_Connect_Stylo_App.Services
                 }).ToListAsync();
 
             // Sửa từ pageSize (20) thành 100 theo yêu cầu màn hình Home
-            const int topCount = 100;
+            const int topCount = 50;
 
             // 2. Tải 100 Biến Thể đầu tiên (Mới nhất theo ID)
             var bienTheDtos = await _context.SanPhamBienThes

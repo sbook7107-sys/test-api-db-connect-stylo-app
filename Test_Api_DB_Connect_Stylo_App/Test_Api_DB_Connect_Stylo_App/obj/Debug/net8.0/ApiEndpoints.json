@@ -113,34 +113,8 @@
   },
   {
     "ContainingType": "Test_Api_DB_Connect_Stylo_App.Controllers.ProductController",
-    "Method": "GetTop20VariantsByCategory",
-    "RelativePath": "api/Product/category/{danhMucId}/top20",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "danhMucId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Test_Api_DB_Connect_Stylo_App.Controllers.ProductController",
     "Method": "GetHomeScreenData",
     "RelativePath": "api/Product/home",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Test_Api_DB_Connect_Stylo_App.Controllers.ProductController",
-    "Method": "GetTop100Variants",
-    "RelativePath": "api/Product/home/top100",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
