@@ -27,7 +27,7 @@ namespace Test_Api_DB_Connect_Stylo_App.Services
                 var donHang = new DonHang
                 {
                     KhachHangId = request.KhachHangId,
-                    TrangThai = "ChoXacNhan",
+                    TrangThai = "",
                     KenhBan = request.KenhBan,
                     TongTienHang = tongTienHang,
                     TongGiamGia = 0,
@@ -74,7 +74,7 @@ namespace Test_Api_DB_Connect_Stylo_App.Services
                 var vanDon = new VanDon
                 {
                     DonHangId = donHang.DonHangId,
-                    TrangThaiGiao = "ChuaGiao",
+                    TrangThaiGiao = "CREATED",
                     PhiVanChuyen = request.PhiVanChuyen
                 };
                 _context.VanDons.Add(vanDon);
