@@ -239,6 +239,32 @@
   },
   {
     "ContainingType": "Test_Api_DB_Connect_Stylo_App.Controllers.ProductController",
+    "Method": "Search",
+    "RelativePath": "api/Product/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test_Api_DB_Connect_Stylo_App.Controllers.ProductController",
     "Method": "GetTop20VariantsByPhanLoai",
     "RelativePath": "api/Product/variants/by-phanloai/{phanLoaiId}",
     "HttpMethod": "GET",
